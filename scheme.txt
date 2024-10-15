@@ -1,0 +1,223 @@
+@Schema({ timestamps: true, versionKey: false })
+export class HCP {
+  @Prop({ type: SchemaTypes.ObjectId, required: true, ref: 'HCO' })
+  hco: string | HCO;
+
+  @Prop({
+    type: SchemaTypes.String,
+    trim: true,
+    lowercase: true,
+    default: null,
+  })
+  email?: string;
+
+  @Prop({ type: SchemaTypes.String, trim: true })
+  firstName: string;
+
+  @Prop({ type: SchemaTypes.String, trim: true })
+  lastName: string;
+
+  @Prop({ type: SchemaTypes.String, trim: true })
+  fullName: string;
+
+  @Prop({ type: SchemaTypes.String })
+  title: string;
+
+  @Prop({ type: SchemaTypes.String, trim: true })
+  phoneNumber: string;
+
+  @Prop({ type: SchemaTypes.ObjectId, ref: 'Company' })
+  company: Types.ObjectId;
+
+  @Prop({ type: SchemaTypes.ObjectId, ref: 'User' })
+  createdBy: Types.ObjectId;
+
+  // @Prop({ type: SchemaTypes.String })
+  // country: string;
+
+  // @Prop({ type: SchemaTypes.Mixed })
+  // contactPerson: {
+  //   firstName: string;
+  //   lastName: string;
+  //   email: string;
+  //   phoneNumber: string;
+  //   title: string;
+  // };
+
+  // @Prop({
+  //   type: [
+  //     {
+  //       id: {
+  //         type: mongoose.Schema.Types.ObjectId,
+  //         default: function () {
+  //           return new mongoose.Types.ObjectId();
+  //         },
+  //       }, // Use ObjectId
+  //       department: { type: SchemaTypes.String, required: true },
+  //       firstName: { type: SchemaTypes.String, required: true },
+  //       lastName: { type: SchemaTypes.String, required: true },
+  //       email: { type: SchemaTypes.String },
+  //       phoneNumber: { type: SchemaTypes.String },
+  //       position: { type: SchemaTypes.String },
+  //       specialty: { type: SchemaTypes.String },
+  //       dob: { type: SchemaTypes.Date },
+  //       address: { type: SchemaTypes.String },
+  //       note: { type: SchemaTypes.String },
+  //       status: { type: SchemaTypes.String },
+  //       createdDate: { type: SchemaTypes.Date, default: new Date() },
+  //       deactivated: { type: SchemaTypes.Boolean, default: false },
+  //     },
+  //   ],
+  //   default: [],
+  // })
+  // departmentsAndStaff: Array<IDepartmentAndStaff>;
+
+  @Prop({ type: SchemaTypes.Boolean, default: false })
+  deactivated: boolean;
+
+  // @Prop({ type: [SchemaTypes.String] })
+  // address: string[];
+
+  // @Prop({ type: SchemaTypes.String })
+  // city: string;
+
+  @Prop({ type: SchemaTypes.Date })
+  dob: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // state: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // postalCode: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // institutionType: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // institutionName: string;
+
+  @Prop({ type: SchemaTypes.Boolean, default: false })
+  isDeleted: boolean;
+
+  @Prop({ type: SchemaTypes.String })
+  specialty: string;
+
+  @Prop({ type: SchemaTypes.String })
+  department: string;
+
+  @Prop({ type: SchemaTypes.String })
+  position: string;
+
+  @Prop({ type: SchemaTypes.String })
+  note: string;
+
+  // @Prop({ type: [SchemaTypes.String] })
+  // image: string[];
+}
+
+
+
+
+@Schema({ timestamps: true, versionKey: false })
+export class HCO {
+  // @Prop({
+  //   type: SchemaTypes.String,
+  //   trim: true,
+  //   lowercase: true,
+  //   default: null,
+  // })
+  // email?: string;
+
+  // @Prop({ type: SchemaTypes.String, trim: true })
+  // firstName: string;
+
+  // @Prop({ type: SchemaTypes.String, trim: true })
+  // lastName: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // title: string;
+
+  // @Prop({ type: SchemaTypes.String, trim: true })
+  // phoneNumber: string;
+
+  @Prop({ type: SchemaTypes.ObjectId, ref: 'Company' })
+  company: Types.ObjectId;
+
+  @Prop({ type: SchemaTypes.ObjectId, ref: 'User' })
+  createdBy: Types.ObjectId;
+
+  @Prop({ type: SchemaTypes.String })
+  country: string;
+
+  @Prop({ type: SchemaTypes.Mixed })
+  contactPerson: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phoneNumber: string;
+    title: string;
+  };
+
+  @Prop({
+    type: [{ type: SchemaTypes.ObjectId, required: false, ref: 'HCP' }],
+    default: [],
+  })
+  hcps: Array<string | HCP>;
+
+  @Prop({ type: SchemaTypes.Boolean, default: false })
+  deactivated: boolean;
+
+  @Prop({ type: SchemaTypes.Boolean, default: false })
+  isDeleted: boolean;
+
+  @Prop({ type: [SchemaTypes.String] })
+  address: string[];
+
+  @Prop({ type: SchemaTypes.String })
+  city: string;
+
+  @Prop({ type: SchemaTypes.String })
+  state: string;
+
+  @Prop({ type: SchemaTypes.String })
+  postalCode: string;
+
+  @Prop({ type: SchemaTypes.String })
+  institutionType: string;
+
+  @Prop({ type: SchemaTypes.String })
+  institutionName: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // specialty: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // department: string;
+
+  // @Prop({ type: SchemaTypes.String })
+  // position: string;
+
+  @Prop({ type: SchemaTypes.String })
+  note: string;
+
+  @Prop({ type: [SchemaTypes.String] })
+  image: string[];
+
+  @Prop({ default: Date.now })
+  createdAt: Date;
+
+  @Prop({ default: Date.now })
+  updatedAt: Date;
+}
+
+
+
+
+
+
+
+// Env
+
+const envWebhooks = {dev: “https://dev.copilot.pharmaserv.co/api/v1/webhook/hcp/creation”,
+staging: “https://staging.copilot.pharmaserv.co/api/v1/webhook/hcp/creation”,
+production:  “https://prod.copilot.pharmaserv.co/api/v1/webhook/hcp/creation”,}

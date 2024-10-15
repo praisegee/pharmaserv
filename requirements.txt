@@ -1,0 +1,9 @@
+Flask
+groq
+python-decouple
+pandas
+openpyxl
+gunicorn
+celery
+redis
+requests

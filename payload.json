@@ -1,0 +1,163 @@
+[
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "66258f552c03a4262d152e71",
+    "practitionerDetail": {
+      "name": "Dr. John Doe 1",
+      "deparment": "Cardiology",
+      "category": "Specialist"
+    },
+    "detailedProducts": [
+      {
+        "name": "Emzor paracetamol ",
+        "rxAmount": 72,
+        "clinicalOverviewReaction": "Positive",
+        "efficacyReaction": "Effective",
+        "safetyReaction": "Safe"
+      },
+      {
+        "name": "Emzor paracetamol ",
+        "rxAmount": 36,
+        "clinicalOverviewReaction": "Neutral",
+        "efficacyReaction": "Moderate",
+        "safetyReaction": "Safe"
+      }
+    ],
+    "notes": {
+      "objectionNotes": "None",
+      "nextStepActionNotes": "Follow-up in 1 month"
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": null,
+    "practitionerDetail": {
+      "name": "Dr. Emily Foster",
+      "deparment": "Oncology",
+      "category": "Specialist"
+    },
+    "detailedProducts": [
+      {
+        "name": "NEGUS MED BROCHURES",
+        "rxAmount": 50,
+        "clinicalOverviewReaction": "The practitioner found the clinical overview comprehensive but wanted more data on the long-term effects.",
+        "efficacyReaction": "The efficacy results are promising, but the practitioner suggested additional patient trials.",
+        "safetyReaction": "The safety profile is strong, though there's a concern about mild side effects."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "The practitioner raised concerns about drug interactions with existing medications.",
+      "nextStepActionNotes": "A follow-up meeting is scheduled to discuss patient case studies."
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "66258cce2c03a4262d152e22",
+    "practitionerDetail": {
+      "name": "Dr. Michael Zhang",
+      "deparment": "Cardiology",
+      "category": "Consultant"
+    },
+    "detailedProducts": [
+      {
+        "name": "Aspirine",
+        "rxAmount": 70,
+        "clinicalOverviewReaction": "The clinical overview was well-received but the practitioner requested more data on dosage variations.",
+        "efficacyReaction": "Efficacy is viewed positively, with a particular interest in the lower dosage results.",
+        "safetyReaction": "Safety concerns were minimal, but the practitioner asked for more information on rare side effects."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "The practitioner was hesitant about the drug's use in elderly patients.",
+      "nextStepActionNotes": "Send over detailed studies focusing on elderly demographics."
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "66258ecc2c03a4262d152e62",
+    "practitionerDetail": {
+      "name": "Dr. Samantha Lee",
+      "deparment": "Endocrinology",
+      "category": "Specialist"
+    },
+    "detailedProducts": [
+      {
+        "name": "ATORKEM-20",
+        "rxAmount": 30,
+        "clinicalOverviewReaction": "The overview was informative, though the practitioner requested comparative data with other treatments.",
+        "efficacyReaction": "Efficacy was seen as satisfactory, but the practitioner questioned its use in certain conditions.",
+        "safetyReaction": "Safety was acceptable, with some concerns about long-term use in patients with comorbidities."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "The practitioner was concerned about potential resistance to the drug over time.",
+      "nextStepActionNotes": "Provide additional data on drug resistance management strategies."
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "66258cce2c03a4262d152e22",
+    "practitionerDetail": {
+      "name": "Dr. John O'Connor",
+      "deparment": "Neurology",
+      "category": "Consultant"
+    },
+    "detailedProducts": [
+      {
+        "name": "Zisty Tablets",
+        "rxAmount": 40,
+        "clinicalOverviewReaction": "The practitioner appreciated the detailed overview but expressed interest in more neurological data.",
+        "efficacyReaction": "Efficacy was noted as good, especially in early-stage treatment.",
+        "safetyReaction": "Safety concerns were raised regarding off-label use."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "The practitioner was skeptical about off-label usage in certain cases.",
+      "nextStepActionNotes": "Prepare detailed off-label usage guidelines for the next meeting."
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "6638572c23e1d82656f1e89a",
+    "practitionerDetail": {
+      "name": "Dr. Alice Brown",
+      "deparment": "Outpatient",
+      "category": "General Practitioner"
+    },
+    "detailedProducts": [
+      {
+        "name": "Amoxicillin",
+        "rxAmount": 100,
+        "clinicalOverviewReaction": "The practitioner appreciated the clinical overview but required information on pediatric usage.",
+        "efficacyReaction": "The efficacy data is strong, with noticeable improvements in patient outcomes.",
+        "safetyReaction": "The safety profile is well-documented, though further studies on allergic reactions are suggested."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "Concerns were raised about potential antibiotic resistance.",
+      "nextStepActionNotes": "Provide additional research on resistance management."
+    }
+  },
+  {
+    "medRepId": "64cbb8f1af9faf444f0cc5d4",
+    "hcpId": "66259fc22c03a4262d1530ef",
+    "practitionerDetail": {
+      "name": "Dr. John Smith",
+      "deparment": "Cardiac Care",
+      "category": "Consultant"
+    },
+    "detailedProducts": [
+      {
+        "name": "Emzor paracetamol ",
+        "rxAmount": 200,
+        "clinicalOverviewReaction": "Dr. Smith found the overview informative but sought further details on potential side effects in cardiac patients.",
+        "efficacyReaction": "The product's efficacy was acknowledged, particularly in reducing pain and fever.",
+        "safetyReaction": "Safety was noted, though Dr. Smith requested data on long-term use in heart patients."
+      }
+    ],
+    "notes": {
+      "objectionNotes": "Inquiries about long-term effects were made.",
+      "nextStepActionNotes": "Provide additional data on long-term usage effects."
+    }
+  }
+]

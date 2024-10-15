@@ -1,0 +1,66 @@
+{
+    "companyId": "12345",
+    "managerId": "67890",
+    "data": [
+        {
+            "email": NaN,
+            "country": NaN,
+            "contactPersonFirstName": NaN,
+            "contactPersonLastName": NaN,
+            "contactPersonEmail": NaN,
+            "contactPersonPhoneNumber": NaN,
+            "contactPersonTitle": NaN,
+            "addressLine1": NaN,
+            "addressLine2": NaN,
+            "city": NaN,
+            "state": NaN,
+            "postalCode": NaN,
+            "institutionType": NaN,
+            "institutionName": NaN,
+            "practitioners": [
+                {
+                    "department": NaN,
+                    "firstName": NaN,
+                    "lastName": NaN,
+                    "email": NaN,
+                    "phone": NaN,
+                    "position": NaN,
+                    "specialty": NaN,
+                    "dob": NaN,
+                    "address": NaN,
+                    "note": NaN
+                }
+            ]
+        },
+        {
+            "email": "kd@gmail.com",
+            "country": NaN,
+            "contactPersonFirstName": NaN,
+            "contactPersonLastName": NaN,
+            "contactPersonEmail": NaN,
+            "contactPersonPhoneNumber": NaN,
+            "contactPersonTitle": NaN,
+            "addressLine1": NaN,
+            "addressLine2": NaN,
+            "city": NaN,
+            "state": NaN,
+            "postalCode": NaN,
+            "institutionType": NaN,
+            "institutionName": NaN,
+            "practitioners": [
+                {
+                    "department": NaN,
+                    "firstName": NaN,
+                    "lastName": NaN,
+                    "email": NaN,
+                    "phone": NaN,
+                    "position": NaN,
+                    "specialty": NaN,
+                    "dob": NaN,
+                    "address": NaN,
+                    "note": NaN
+                }
+            ]
+        }
+    ]
+}
